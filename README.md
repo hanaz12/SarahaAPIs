@@ -28,19 +28,23 @@ Saraha is a Spring Boot-based web application that allows users to send and rece
 - **Jakarta Validation**: Request validation
 - **MapStruct**: Entity to DTO mapping
 
-## Project Structure
-saraha/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com.example.spring/
-│   │   │       ├── auth/           # Authentication-related classes
-│   │   │       ├── Controller/     # REST controllers
-│   │   │       ├── DTO/            # Data Transfer Objects
-│   │   │       ├── Exceptions/     # Custom exceptions
-│   │   │       ├── Model/          # JPA entities
-│   │   │       ├── Repository/     # JPA repositories
-│   │   │       └── Service/        # Business logic layer
-│   │   └── resources/
-│   │       └── application.properties  # Configuration file
-└── pom.xml                             # Maven dependencies
+## Setup and Installation
+
+### Prerequisites
+- Java 17 or higher
+- Maven
+- MySQL (or your preferred database)
+
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/your-username/saraha.git
+cd saraha
+
+### Step 2: Configure the Database
+```bash
+Edit src/main/resources/application.properties:
+
+propertiesspring.datasource.url=jdbc:mysql://localhost:3306/saraha_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
