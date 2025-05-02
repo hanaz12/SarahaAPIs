@@ -30,25 +30,6 @@ The project is architected with a clean structure, separating concerns into dist
 * Secure process for users to change their passwords.
 * Robust input validation for all incoming requests.
 
-**Project Structure**
-
-The project's codebase is organized into logical directories to ensure maintainability and clarity. Here's a breakdown of the main source code structure:
-saraha/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com.example.spring/
-│   │   │       ├── auth/               # Classes related to user authentication, including controllers, services, and request/response objects.
-│   │   │       ├── Controller/         # REST controllers responsible for handling incoming API requests and routing them to appropriate services.
-│   │   │       ├── DTO/                # Data Transfer Objects used to structure data for API requests and responses, ensuring data integrity and separation from entity models.
-│   │   │       ├── Exceptions/         # Custom exception classes defined to handle specific application errors gracefully.
-│   │   │       ├── Model/              # JPA entity classes representing the application's data model and their mapping to database tables.
-│   │   │       ├── Repository/         # JPA repository interfaces providing methods for database interactions and data persistence.
-│   │   │       └── Service/            # Business logic layer containing the core application logic and orchestrating interactions between repositories and other components.
-│   │   └── resources/
-│   │       └── application.properties  # Configuration file for the application, including database settings, JWT configurations, and other environment-specific properties.
-└── pom.xml                             # Maven project configuration file, defining dependencies, build configurations, and plugins.
-
 **Setup and Installation**
 
 1.  **Clone the Repository:**
