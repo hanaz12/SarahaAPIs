@@ -14,7 +14,7 @@ The project is architected with a clean structure, separating concerns into dist
 * JWT (JSON Web Tokens): Enabling secure user authentication and session management.
 * Spring Data JPA: Facilitating database interactions.
 * Hibernate: The Object-Relational Mapping (ORM) tool for mapping Java objects to database tables.
-* MySQL/PostgreSQL: The chosen database system (configurable).
+* MySQL: The chosen database system (configurable).
 * Maven: For efficient dependency management.
 * Lombok: Reducing boilerplate code, such as getters, setters, and constructors.
 * Jakarta Validation: Ensuring the integrity of request data through validation.
